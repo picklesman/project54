@@ -1,13 +1,19 @@
 from flask import Flask
+from datetime import datetime
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
     return "Hello World!"
 
-@app.route("/timelimit")
+@app.route("/time")
 def time_limit():
-    return 'Only 54 hours total!'
+	deadline = datetime(2012,2,5,17)
+	delta = deadline - datetime.now()
+	hours = (delta.days * 24) + (delta.seconds / 60 / 60)
+	s = str(hours) + " hours left. Hurry up!"
+	return s
 
 if __name__ == "__main__":
     app.run()
