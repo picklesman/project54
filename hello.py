@@ -5,5 +5,9 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/timelimit")
+def time_limit():
+    return 'Only 54 hours total!'
+
 if __name__ == "__main__":
     app.run()
