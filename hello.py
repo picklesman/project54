@@ -14,7 +14,7 @@ def hello():
 def time_limit():
 	deadline = datetime(2012,2,5,17)
 	delta = deadline - datetime.now()
-	s = "%s hours left. Hurry up!" % (str(delta))
+	s = "%s days, %s hours left. <br> Hurry up! Don't forget to breathe." % (delta.days, delta.seconds/3600)
 	return s
 
 if __name__ == "__main__":
