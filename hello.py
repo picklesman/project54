@@ -11,7 +11,7 @@ def hello():
 
 @app.route("/title")
 def title()
-    return "Hate to Wait!"
+    return "Hate to Wait!!"
 
 @app.route("/time")
 def time_limit():
