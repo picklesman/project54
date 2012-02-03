@@ -8,7 +8,7 @@ app.config['DEBUG'] = True
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return "Hello Flask World!"
 
 @app.route("/time")
 def time_limit():
