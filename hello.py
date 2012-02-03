@@ -10,7 +10,7 @@ def hello():
     return "Hello Flask World!"
 
 @app.route("/title")
-def title()
+def title():
     return "Hate to Wait!!"
 
 @app.route("/time")
