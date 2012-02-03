@@ -9,6 +9,10 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/title")
+def title()
+    return "Hate to Wait!"
+
 @app.route("/time")
 def time_limit():
 	deadline = datetime(2012,2,5,17)
